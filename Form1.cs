@@ -10,11 +10,56 @@ using System.Windows.Forms;
 
 namespace GUI_6_Forms
 {
-  public partial class Form1 : Form
-  {
-    public Form1()
+    public partial class Form1 : Form
     {
-      InitializeComponent();
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this + " click");
+        }
+        
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MessageBox.Show(this + " click");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this + " click");
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            //throw new System.NotImplementedException();
+        }
+        
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this + " click");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this + " click");
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            //throw new System.NotImplementedException();
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(this + " click");
+        }
     }
-  }
 }
